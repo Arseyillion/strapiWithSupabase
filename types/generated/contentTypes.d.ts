@@ -557,7 +557,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       }>;
     category: Schema.Attribute.Enumeration<
       [
-        'Brand identify & web strategy',
+        'Brand identity & web strategy',
         'Technology News',
         'Portfolio and case studies',
         'web development tutorials',
