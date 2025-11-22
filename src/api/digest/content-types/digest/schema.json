@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "digests",
+  "info": {
+    "singularName": "digest",
+    "pluralName": "digests",
+    "displayName": "digest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "to": {
+      "type": "string"
+    },
+    "eventText": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    },
+    "actorName": {
+      "type": "string"
+    },
+    "actorImage": {
+      "type": "string"
+    },
+    "postTitle": {
+      "type": "text"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

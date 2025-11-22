@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_posts_popular_posts",
+  "info": {
+    "displayName": "Popular Post",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

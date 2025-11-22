@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replies",
+  "info": {
+    "singularName": "reply",
+    "pluralName": "replies",
+    "displayName": "Reply",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "ReplyText": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "authorName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "UID": {
+      "type": "text"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "authorId": {
+      "type": "string",
+      "required": false
+    },
+    "authorEmail": {
+      "type": "text"
+    },
+    "parentAuthorName": {
+      "type": "text"
+    }
+  }
+}

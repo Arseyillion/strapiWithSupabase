@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Comments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "text": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "authorName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "replies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reply.reply"
+    },
+    "imageUrl": {
+      "type": "text"
+    },
+    "authorId": {
+      "type": "text"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comment.comment"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "comments"
+    },
+    "commentAuthorEmail": {
+      "type": "string"
+    },
+    "postId": {
+      "type": "string"
+    }
+  }
+}

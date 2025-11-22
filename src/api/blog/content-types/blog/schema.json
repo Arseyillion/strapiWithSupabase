@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Brand identify & web strategy",
+        "Technology News",
+        "Portfolio and case studies",
+        "web development tutorials",
+        "software engineering best practices",
+        "Movie Reviews",
+        "UI/UX design insights",
+        "Freelancing and client work",
+        "Tools and Tech Reviews",
+        "Industry trend and insights",
+        "Problem solving and Debugging"
+      ]
+    },
+    "Summary": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true
+    },
+    "IsFeatured": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "FeaturedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "Readtime": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "blogtexteditor": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "hasSponsor": {
+      "type": "boolean"
+    },
+    "sponsor_name": {
+      "type": "string"
+    },
+    "sponsor_tagline": {
+      "type": "text"
+    },
+    "sponsor_url": {
+      "type": "string"
+    },
+    "sponsor_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

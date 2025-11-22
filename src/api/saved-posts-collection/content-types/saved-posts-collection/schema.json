@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_posts_collections",
+  "info": {
+    "singularName": "saved-posts-collection",
+    "pluralName": "saved-posts-collections",
+    "displayName": "SavedPostsCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "text"
+    },
+    "postId": {
+      "type": "text"
+    },
+    "isSaved": {
+      "type": "string"
+    }
+  }
+}
