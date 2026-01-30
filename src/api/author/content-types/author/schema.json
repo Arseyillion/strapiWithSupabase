@@ -24,10 +24,36 @@
     "email": {
       "type": "string"
     },
+    "about": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "joinDate": {
+      "type": "date"
+    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
+      "mappedBy": "author"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
       "mappedBy": "author"
     }
   }

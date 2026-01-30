@@ -1,4 +1,4 @@
-export default () => ({
+module.exports = () => ({
   upload: {
     config: {
       sizeLimit: 1000000, // 1MB
