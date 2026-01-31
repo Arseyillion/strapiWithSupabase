@@ -9,9 +9,10 @@ export default () => ({
       },
       security: {
         enableFileValidation: true,
-        allowedFileTypes: [
-          'images/*',
-          'files/*'
+        allowedTypes: [
+          'image/*',
+          'application/pdf',
+          'text/*'
         ],
         maxFileSize: 1000000, // 1MB
         sanitizeFileName: true,
