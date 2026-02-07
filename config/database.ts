@@ -25,12 +25,12 @@ export default ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'https://imasqptbfyyfqnaqixks.supabase.co'),
+        host: env('DATABASE_HOST', 'imasqptbfyyfqnaqixks.supabase.co'),
         port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'postgres'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'RkH2r8YLhsgdL80Y'),
-        ssl: env.bool('DATABASE_SSL', false) && {
+        ssl: env.bool('DATABASE_SSL', true) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
           ca: env('DATABASE_SSL_CA', undefined),
