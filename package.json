@@ -18,15 +18,16 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.34.0",
     "@strapi/plugin-users-permissions": "5.34.0",
+    "@strapi/provider-upload-aws-s3": "^5.35.0",
     "@strapi/strapi": "5.34.0",
+    "@supabase/supabase-js": "^2.75.5",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "pg": "^8.18.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0",
-    "@supabase/supabase-js": "^2.75.5"
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
